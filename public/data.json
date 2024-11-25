@@ -1,0 +1,32 @@
+{
+  "Data1": [
+    {
+      "title": "Amanita",
+      "id": 1,
+      "imgSrc": "images/JellyFish.webp",
+      "discription": "discription",
+      "comments": "comment"
+    },
+    {
+      "title": "Jelly fish",
+      "id": 2,
+      "imgSrc": "",
+      "discription": "discription",
+      "comments": "comment"
+    },
+    {
+      "title": "Butterfly",
+      "id": 3,
+      "imgSrc": "",
+      "discription": "discription",
+      "comments": "comment"
+    },
+    {
+      "title": "Tulip",
+      "id": 4,
+      "imgSrc": "",
+      "discription": "discription",
+      "comments": "comment"
+    }
+  ]
+}
