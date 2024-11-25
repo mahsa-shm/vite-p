@@ -1,203 +1,42 @@
-:root {
-  --text: #eeeeee;
-  --side-one: #222831;
-  --main-two: #393e46;
-  --main-one: #00adb5;
-  --side-two: #eeeeee;
-}
-.container {
-  /* background-color: blue; */
-  width: 85%;
-  margin-top: 100px;
-  padding: 10px;
-}
-
-/* ******************************* */
-/* HEADER */
-.header {
-  margin-bottom: 25px;
-  /* width: 100%; */
-  height: 100px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  background-color: var(--side-one);
-  border-radius: 5px;
-  align-items: center;
-}
-.header h3 {
-  color: var(--text);
-  /* background-color: red; */
-  margin-right: 10px;
-}
-.circles {
-  display: flex;
-  margin-left: 10px;
-}
-.circles section {
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  background-color: var(--text);
-  margin: 2px;
-}
-/* ***************************************** */
-/* MAIN */
-.main-div {
-  background-color: var(--side-one);
-  margin-top: 25px;
-  width: 100%;
-  border-radius: 5px;
-  padding: 10px;
-  color: var(--text);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-/* ***************************************** */
-.little-div {
-  width: 80%;
-  background-color: #00adb5;
-  background-color: var(--main-two);
-  display: flex;
-  border-radius: 10px;
-  flex-direction: column;
-  align-items: center;
-}
-.little-div img {
-  margin: 10px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-.little-div h2 {
-  margin: 20px 0;
-}
-.little-div p {
-  margin: 10px 70px;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
-.more-info-button {
-  width: 200px;
-  border: 3px solid var(--text);
-  padding: 10px;
-  text-align: center;
-  margin: 10px;
-  background-color: transparent;
-  color: var(--text);
-  border-radius: 5px;
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
 }
-.more-info-button:hover {
-  background-color: var(--text);
-  color: var(--side-one);
-  transition: 0.2s ease-in-out;
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
 }
-.didUpdate-list {
-  display: flex;
-}
-.didUpdate-list section {
-  padding: 10px;
-  margin: 15px;
-  text-align: center;
-  border: 2px solid transparent;
-  cursor: pointer;
-}
-.didUpdate-list section:hover {
-  border: 2px solid var(--text);
-  transition: 0.2s ease-in-out;
-  border-radius: 5px;
-}
-.didMount-div {
-  display: flex;
-}
-.section {
-  /* max-width: 300px; */
-  background-color: var(--main-two);
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px;
-}
-.section img {
-  width: 100%;
-  border-radius: 5px;
-  object-fit: cover;
-}
-.section p {
-  font-size: smaller;
-}
-.loading {
-  font-size: 40px;
-  padding: 50px;
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/* ******************************** */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
-/*********************/
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
 
-@media only screen and (min-width: 1200px) {
-  body {
-    background: pink !important;
-  }
-  .didUpdate-list {
-    flex-direction: column;
-  }
-  .little-div img {
-    width: 500px;
-    height: 300px;
-  }
-  .didMount-div .section {
-    width: 250px;
-  }
-  .didMount-div .section img {
-    height: 150px;
-  }
+.card {
+  padding: 2em;
 }
-@media only screen and (max-width: 1200px) {
-  body {
-    background: rgb(182, 69, 87) !important ;
-  }
-  .didUpdate-list {
-    flex-direction: column;
-  }
-  .little-div img {
-    width: 500px;
-    height: 300px;
-  }
-  .didMount-div {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .didMount-div .section {
-    max-width: 45%;
-  }
-  .didMount-div .section img {
-    height: 150px;
-  }
+
+.read-the-docs {
+  color: #888;
 }
-@media only screen and (max-width: 780px) {
-  body {
-    background-color: #26559b !important ;
-  }
-  .didUpdate-list {
-    flex-direction: row;
-  }
-  .main-div {
-    flex-direction: column;
-  }
-  .little-div img {
-    width: 95%;
-    height: 150px;
-  }
-  .header h3 {
-    font-size: 15px;
-  }
-  .didMount-div {
-    justify-content: center;
-  }
-  .didMount-div .section {
-    max-width: 90%;
-  }
-  .didMount-div .section img {
-    height: 150px;
-  }
-}
-/******************/
